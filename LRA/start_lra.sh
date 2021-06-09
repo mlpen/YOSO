@@ -1,0 +1,5 @@
+docker run --ipc=host --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=$3 -v "$PWD/..:/workspace" -d mlpen/transformers:$1 /bin/bash -c "cd LRA; python3 run_tasks.py --model $2 --task listops"
+docker run --ipc=host --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=$4 -v "$PWD/..:/workspace" -d mlpen/transformers:$1 /bin/bash -c "cd LRA; python3 run_tasks.py --model $2 --task text"
+docker run --ipc=host --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=$5 -v "$PWD/..:/workspace" -d mlpen/transformers:$1 /bin/bash -c "cd LRA; python3 run_tasks.py --model $2 --task image"
+docker run --ipc=host --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=$6 -v "$PWD/..:/workspace" -d mlpen/transformers:$1 /bin/bash -c "cd LRA; python3 run_tasks.py --model $2 --task retrieval"
+docker run --ipc=host --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=$7 -v "$PWD/..:/workspace" -d mlpen/transformers:$1 /bin/bash -c "cd LRA; python3 run_tasks.py --model $2 --task pathfinder32"

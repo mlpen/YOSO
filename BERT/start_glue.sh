@@ -1,0 +1,3 @@
+docker run --ipc=host --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=$4 -v "$PWD/..:/workspace" -d mlpen/transformers:$1 /bin/bash -c "cd BERT; python3 run_glue.py --model $2 --batch_size 32 --lr 3e-5 --task QNLI --checkpoint $3"
+docker run --ipc=host --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=$5 -v "$PWD/..:/workspace" -d mlpen/transformers:$1 /bin/bash -c "cd BERT; python3 run_glue.py --model $2 --batch_size 32 --lr 3e-5 --task QQP --checkpoint $3"
+docker run --ipc=host --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=$6 -v "$PWD/..:/workspace" -d mlpen/transformers:$1 /bin/bash -c "cd BERT; python3 run_glue.py --model $2 --batch_size 32 --lr 3e-5 --task MNLI --checkpoint $3"

@@ -1,0 +1,1 @@
+{"batch_size_per_device": 16.0, "epoch": 3, "loss": 8.6179314, "mlm_accu": 0.0296731, "valid_count": 1222.24375}

@@ -1,0 +1,4 @@
+{"batch_size_per_device": 16.0, "epoch": 0, "loss": 10.6634382, "mlm_accu": 0.00417135, "valid_count": 1224.575}
+{"batch_size_per_device": 16.0, "epoch": 1, "loss": 10.155125850000001, "mlm_accu": 0.019293200000000003, "valid_count": 1224.45625}
+{"batch_size_per_device": 16.0, "epoch": 2, "loss": 9.3604951, "mlm_accu": 0.019692150000000002, "valid_count": 1225.425}
+{"batch_size_per_device": 16.0, "epoch": 3, "loss": 8.5299295, "mlm_accu": 0.019086699999999995, "valid_count": 1224.51875}
