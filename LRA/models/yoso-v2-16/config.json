@@ -20,9 +20,9 @@
           "dropout_prob": 0.1,
           "pooling_mode": "MEAN",
           "num_classes": 10,
-          "attn_type": "nystrom",
-          "num_landmarks": 64,
-          "conv_kernel_size": 35
+          "attn_type": "yoso-v2",
+          "hashcode_len": 11,
+          "num_hash_f": 16
       },
       "training":{
           "batch_size": 32,
@@ -57,9 +57,9 @@
           "dropout_prob": 0.1,
           "pooling_mode": "MEAN",
           "num_classes": 2,
-          "attn_type": "nystrom",
-          "num_landmarks": 64,
-          "conv_kernel_size": 35
+          "attn_type": "yoso-v2",
+          "hashcode_len": 12,
+          "num_hash_f": 16
       },
       "training":{
           "batch_size": 32,
@@ -94,9 +94,9 @@
           "dropout_prob": 0.1,
           "pooling_mode": "MEAN",
           "num_classes": 2,
-          "attn_type": "nystrom",
-          "num_landmarks": 64,
-          "conv_kernel_size": 35
+          "attn_type": "yoso-v2",
+          "hashcode_len": 12,
+          "num_hash_f": 16
       },
       "training":{
           "batch_size": 32,
@@ -131,9 +131,9 @@
           "dropout_prob": 0.1,
           "pooling_mode": "MEAN",
           "num_classes": 10,
-          "attn_type": "nystrom",
-          "num_landmarks": 64,
-          "conv_kernel_size": 35
+          "attn_type": "yoso-v2",
+          "hashcode_len": 10,
+          "num_hash_f": 16
       },
       "training":{
           "batch_size": 256,
@@ -168,9 +168,9 @@
           "dropout_prob": 0.1,
           "pooling_mode": "MEAN",
           "num_classes": 2,
-          "attn_type": "nystrom",
-          "num_landmarks": 64,
-          "conv_kernel_size": 35
+          "attn_type": "yoso-v2",
+          "hashcode_len": 10,
+          "num_hash_f": 16
       },
       "training":{
           "batch_size": 256,
