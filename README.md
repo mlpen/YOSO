@@ -40,7 +40,7 @@ The command will create a `YOSO/BERT/models/<model>/model` folder holding all ch
 
 ### Pre-training from Different Model's Checkpoint
 
-Copy a checkpoint (one of `.model` or `.cp` file) from `YOSO/BERT/models/<diff_model>/model` folder to `YOSO/BERT/models/<model>` folder and add a key-value pair in `YOSO/BERT/models/<model>/config.json`: `"from_cp": "<checkpoint_file>"`. One example is shown in `bert-small-4096/config.json`. This procedure also works for extending the max sequence length of a model (For example, use `bert-small` pre-trained weights as initialization for `bert-small-4096`).
+Copy a checkpoint (one of `.model` or `.cp` file) from `YOSO/BERT/models/<diff_model>/model` folder to `YOSO/BERT/models/<model>` folder and add a key-value pair in `YOSO/BERT/models/<model>/config.json`: `"from_cp": "<checkpoint_file>"`. One example is shown in `YOSO/BERT/models/bert-small-4096/config.json`. This procedure also works for extending the max sequence length of a model (For example, use `bert-small` pre-trained weights as initialization for `bert-small-4096`).
 
 ### GLUE Fine-tuning
 
@@ -82,9 +82,11 @@ The command will create a `YOSO/LRA/models/<model>/model` folder holding the bes
 
 ### Datasets
 
-The pre-training dataset consists of English Wikipedia and BookCorpus. All downloaded data files should be placed in the corresponding folder under `data-preprocessing`. The original format of English Wikipedia dump is preprocessed using [wikiextractor](https://github.com/attardi/wikiextractor), and the resulting files are placed in `data-preprocessing/wiki`. Then, run `data-preprocessing/<dataset>/preprocess.py` under each corresponding folder to generate data files of unified format. After preprocessing, run `data-preprocessing/preprocess_data_<length>.py` to generate pre-training data of specific sequence length.
+<!-- The pre-training dataset consists of English Wikipedia and BookCorpus. All downloaded data files should be placed in the corresponding folder under `data-preprocessing`. The original format of English Wikipedia dump is preprocessed using [wikiextractor](https://github.com/attardi/wikiextractor), and the resulting files are placed in `data-preprocessing/wiki`. Then, run `data-preprocessing/<dataset>/preprocess.py` under each corresponding folder to generate data files of unified format. After preprocessing, run `data-preprocessing/preprocess_data_<length>.py` to generate pre-training data of specific sequence length.
 
-For GLUE datasets, download the datasets and place them under `glue` folder
+For GLUE datasets, download the datasets and place them under `glue` folder -->
+
+To be updated
 
 ### Pre-training
 
@@ -119,7 +121,7 @@ python3 run_glue.py --model bert-small --batch_size 32 --lr 3e-5 --task MRPC --c
 
 The command will create a log file in `YOSO/RoBERTa/models/<model>/model`.
 
-## Efficiency
+<!-- ## Efficiency -->
 
 
 ## Citation
